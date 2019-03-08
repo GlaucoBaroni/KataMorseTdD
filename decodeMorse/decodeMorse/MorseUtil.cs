@@ -65,5 +65,10 @@ namespace decodeMorse
             else
                 return false;
         }
+
+        public string Decode(string morseInput)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
