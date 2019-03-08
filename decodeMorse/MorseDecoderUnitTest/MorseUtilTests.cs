@@ -34,6 +34,15 @@ namespace MorseDecoderUnitTest
                 Assert.AreEqual(expected, actual, e.Message);
             }
         }
-        
+
+        [TestMethod]
+        public void DecodeMethod_DecodeCharacter()
+        {
+            string inputstring = ".";
+            string expected = "E";
+            MorseUtil morseUtil = new MorseUtil();
+            string actual = morseUtil.Decode(inputstring);
+            Assert.AreEqual(expected, actual, "Unable to decode '{0}' char",inputstring);
+        }
     }
 }
