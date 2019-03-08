@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "decodeMorse", "decodeMorse\decodeMorse.csproj", "{B3B1F8D4-41A0-4ECE-B59A-0272B605BE57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MorseDecoderUnitTest", "MorseDecoderUnitTest\MorseDecoderUnitTest.csproj", "{9C610955-F335-4CCE-9016-F9046784690A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3B1F8D4-41A0-4ECE-B59A-0272B605BE57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3B1F8D4-41A0-4ECE-B59A-0272B605BE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3B1F8D4-41A0-4ECE-B59A-0272B605BE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3B1F8D4-41A0-4ECE-B59A-0272B605BE57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C610955-F335-4CCE-9016-F9046784690A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C610955-F335-4CCE-9016-F9046784690A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C610955-F335-4CCE-9016-F9046784690A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C610955-F335-4CCE-9016-F9046784690A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB44C57D-71EF-4A26-885B-9A2FACF02698}
+	EndGlobalSection
+EndGlobal
