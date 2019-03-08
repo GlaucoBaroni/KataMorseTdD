@@ -27,12 +27,13 @@ namespace MorseDecoderUnitTest
             try
             {
                 actual = morseUtil.Decode(inputstring);
-                Assert.AreEqual(expected, actual, "String returned not empty");
+                Assert.AreEqual(expected, actual, "String returned isn't empty");
             }
             catch (Exception e)
             {
-                Assert.AreEqual(expected, actual,e.Message);
-            }            
+                Assert.AreEqual(expected, actual, e.Message);
+            }
         }
+        
     }
 }

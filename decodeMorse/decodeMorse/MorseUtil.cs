@@ -68,7 +68,13 @@ namespace decodeMorse
 
         public string Decode(string morseInput)
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+            morseInput = morseInput.Trim();
+            if (!string.IsNullOrEmpty(morseInput))
+            {
+
+            }
+            return sb.ToString();
         }
     }
 }
