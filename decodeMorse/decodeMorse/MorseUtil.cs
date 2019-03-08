@@ -87,7 +87,7 @@ namespace decodeMorse
                     sb.Append(" ");
                 }
             }
-            return sb.ToString();
+            return sb.ToString().Trim();
         }
     }
 }
