@@ -10,6 +10,13 @@ namespace decodeMorse
     {
         static void Main(string[] args)
         {
+            string morseToDecode = string.Empty;
+            if (args.Length > 0)
+            {
+                morseToDecode = args[0];
+            }
+            MorseUtil morseUtil = new MorseUtil();
+            Console.Write(morseUtil.Decode(morseToDecode));
         }
     }
 }
