@@ -53,5 +53,14 @@ namespace MorseDecoderUnitTest
             string actual = morseUtil.Decode(inputstring);
             Assert.AreEqual(expected, actual, "Unable to decode '{0}' word", inputstring);
         }
+        [TestMethod]
+        public void DecodeMethod_DecodePhrase()
+        {
+            string inputstring = ".... . -.--   .--- ..- -.. .";
+            string expected = "HEY JUDE";
+            MorseUtil morseUtil = new MorseUtil();
+            string actual = morseUtil.Decode(inputstring);
+            Assert.AreEqual(expected, actual, "Unable to decode '{0}' phrase", inputstring);
+        }
     }
 }
