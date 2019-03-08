@@ -62,5 +62,15 @@ namespace MorseDecoderUnitTest
             string actual = morseUtil.Decode(inputstring);
             Assert.AreEqual(expected, actual, "Unable to decode '{0}' phrase", inputstring);
         }
+
+        [TestMethod]
+        public void DecodeMethod_DecodeSpecialServiceCode_SOS()
+        {
+            string inputstring = "···−−−···";
+            string expected = "SOS";
+            MorseUtil morseUtil = new MorseUtil();
+            string actual = morseUtil.Decode(inputstring);
+            Assert.AreEqual(expected, actual, "Unable to decode '{0}' special service code", inputstring);
+        }
     }
 }
