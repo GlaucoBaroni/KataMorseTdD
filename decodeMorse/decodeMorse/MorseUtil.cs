@@ -72,10 +72,14 @@ namespace decodeMorse
             morseInput = morseInput.Trim();
             if (!string.IsNullOrEmpty(morseInput))
             {
-                string morsecode = string.Empty;
-                if (_morse.TryGetValue(morseInput, out morsecode))
+                var characters = morseInput.Split(' ');
+                foreach (var character in characters)
                 {
-                    sb.Append(morsecode);
+                    string morsecode = string.Empty;
+                    if (_morse.TryGetValue(character, out morsecode))
+                    {
+                        sb.Append(morsecode);
+                    }
                 }
             }
             return sb.ToString();
